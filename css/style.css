@@ -1,0 +1,17 @@
+.test1 {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.test2 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.test3 {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+}
