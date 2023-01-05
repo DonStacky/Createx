@@ -341,4 +341,172 @@ display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
+}
+
+/*-----------------Direction-----------------*/
+
+.direction-heading {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.direction__list {
+    display: flex;
+    gap: 45px;
+    margin-top: 90px;
+    margin-bottom: 56px;
+
+}
+.direction__item {
+}
+.direction__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #9A9CA5;
+    padding: 1px 8px;
+    background-color: transparent;
+    border: 1px solid #9A9CA5;
+    border-radius: 4px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.direction__button:hover {
+    background-color: #FF3F3A;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #FF3F3A;
+}
+
+.direction__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    grid-template-rows: repeat(2, 420px);
+    grid-gap: 30px;
+    margin-bottom: 178px;
+}
+
+.direction__grid-item:hover span {
+    color: #FF3F3A;
+    transition: 0.3s;
+}
+
+.direction__grid-item {
+    transition: 1s;
+}
+
+.direction__grid-item:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    transition: 0.3s;
+}
+
+.direction__grid-img {
+    border-radius: 4px 4px 0px 0px;
+}
+.direction__grid-button {
+    margin: 24px 0px 0px 24px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+
+.direction__grid-arrow span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+    margin-right: 11px;
+    transition: 1s;
+}
+
+.direction__grid-arrow span, img {
+    vertical-align: middle;
+}
+
+.direction__grid-arrow {
+    padding: 0px 0px 24px 24px;
+}
+
+.direction__grid-button--green {
+    background: #03CEA4;
+}
+
+.direction__grid-button--blue {
+    background: #5A87FC;
+}
+
+.direction__grid-button--orange {
+    background: #F89828;
+}
+
+.direction__grid-button--pink {
+    background: #F52F6E;
+}
+
+.direction__grid-button--violet {
+    background: #7772F1;
+}
+
+.direction__grid-item--empty {
+    background-color: #F4F5F7;
+    border-radius: 4px;
+}
+
+.direction__grid-text--empty {
+    display: inline-block;
+    text-align: center;
+    width: 242px;
+    margin-top: 164px;
+    margin-left: 74px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424551;
+}
+
+.direction__grid-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    padding: 0px 24px;
+}
+
+.direction__inner {
+    position: relative;
+}
+
+.direction__inner:before {
+    position: absolute;
+    content: '';
+    background: url("../assets/img/3 we teach/decor_dots.svg") 0px 0px /cover no-repeat;
+    width: 136px;
+    height: 115px;
+    left: -162px;
+    top: 19px;
+}
+
+.direction__inner:after {
+    position: absolute;
+    content: '';
+    background: url("../assets/img/3 we teach/Group.svg") 0px 0px /cover no-repeat;
+    width: 242px;
+    height: 242px;
+    right: -483px;
+    top: 382px;
+    opacity: 0.12;
+}
+
+.direction__border {
+    border: 1px solid #E5E8ED;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
 }
