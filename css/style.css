@@ -55,7 +55,8 @@ body {
     border-radius: 4px;
 }
 
-/*------------------------------------Header top------------------------------------------*/
+/*===================================================== Header Top =====================================================*/
+/*===================================================== Header Top =====================================================*/
 
 .header__inner {
     display: flex;
@@ -139,7 +140,8 @@ body {
     color: #FF3F3A;
 }
 
-/*------------------------------------Header main------------------------------------------*/
+/*===================================================== Header Main =====================================================*/
+/*===================================================== Header Main =====================================================*/
 
 .header__main-inner {
     display: flex;
@@ -252,8 +254,11 @@ body {
     display: none;
 }
 
-/*================== main ==================*/
-/*-----------------about us-----------------*/
+/*===================================================== Main =====================================================*/
+/*===================================================== Main =====================================================*/
+
+/*===================================================== About Us=====================================================*/
+/*===================================================== About Us=====================================================*/
 
 .about__inner {
     color: #1E212C;
@@ -577,4 +582,137 @@ img {
     left: -120px;
     width: 60px;
     height: 60px;
+}
+
+/*===================================================== Our Team =====================================================*/
+/*===================================================== Our Team =====================================================*/
+
+.team__heading {
+    position: relative;
+    padding-top: 170px;
+    margin-bottom: 60px;
+}
+
+.team {
+    background: url(../assets/img/4ourteam/decor.svg) 50% 83px /1734px 597px no-repeat, #F4F5F7;
+    padding-bottom: 180px;
+}
+.team__slide {
+    height: 416px;
+    position: relative;
+    transition: 0.3s;
+    padding: 0px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team__imgbox--1 {
+    height: 340px;
+    background: url(../assets/img/4ourteam/Group5.jpg);
+    transition: all 0.3s;
+}
+
+.team__imgbox--2 {
+    height: 340px;
+    background: url(../assets/img/4ourteam/Group4.jpg);
+    transition: all 0.3s;
+}
+
+.team__imgbox--3 {
+    height: 340px;
+    background: url(../assets/img/4ourteam/Group6.jpg);
+    transition: all 0.3s;
+}
+
+.team__imgbox--4 {
+    height: 340px;
+    background: url(../assets/img/4ourteam/Group7.jpg);
+    transition: all 0.3s;
+}
+
+.team__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 20px;
+    background-color: transparent;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    width: 80px;
+    height: 20px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.team__slide:hover .team__social {
+    opacity: 1;
+}
+
+.team_socialLink g {
+    transition: all 0.5s;
+}
+
+.team_socialLink:hover g {
+    opacity: 1;
+}
+
+.team__imgTitle {
+    font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+color:#424551;
+text-align: center;
+margin-top: 16px;
+margin-bottom: 4px;
+}
+
+.team__imgSubtitle {
+    font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #787A80;
+text-align: center;
+}
+
+.team_socialLink {
+    transition: 0.3s;
+}
+
+.team_socialLink:hover {
+    filter: drop-shadow(3px 3px 0px black);
+}
+
+.team__slider .slick-list {
+    margin: 0px -15px;
+}
+
+.team__arrowBox {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.team__arrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 63, 58, 0);
+    transition: 0.5s;
+}
+
+.team__arrow:hover {
+    background-color: rgba(255, 63, 58, 1);
+}
+
+.team__arrow:hover svg path {
+    transition: 0.5s;
+}
+
+.team__arrow:hover svg path {
+    fill: white;
 }
