@@ -48,5 +48,22 @@ $('.testimonials__arro--next').on('click', function (e) {
 e.preventDefault()
 $('.testimonials__slider').slick('slickNext')
 })
-
+/*=============================================Accordioun=============================================*/
+/*$('.program__link--active').on('click', function(e) {
+    e.preventDefault()
+    $(this).toggleClass('program__link--active')
+    $(this).children('.program__text').slideToggle()
+})*/
+$('.program__link').on('click', function(e) {
+    e.preventDefault()
+    if ($(this).hasClass('program__link--active')) {
+        $(this).removeClass('program__link--active')
+        $(this).children('.program__text').slideUp()
+    } else {
+        $('.program__link').removeClass('program__link--active')
+        $('.program__text').slideUp()
+        $(this).addClass('program__link--active')
+        $(this).children('.program__text').slideDown()
+    }
+})
 })

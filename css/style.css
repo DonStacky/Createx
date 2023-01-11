@@ -50,7 +50,7 @@ body {
 
 .imgbox img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 4px;
 }
@@ -722,7 +722,7 @@ img {
 /*===================================================== Testimonials =====================================================*/
 
 .testimonials {
-    background: url("../assets/img/5studentsay/decor.svg") calc(50% + 100px) 115px / auto no-repeat,#F4F5F7;
+    background: url("../assets/img/5studentsay/decor.svg") calc(50% + 100px) 115px / auto no-repeat, #F4F5F7;
 }
 
 .testimonials__heading {
@@ -839,4 +839,115 @@ img {
 li.slick-active>button {
     background-color: #424551;
     transition: 0.3s;
+}
+
+/*===================================================== Companies =====================================================*/
+/*===================================================== Companies =====================================================*/
+.companies {
+    background: #F4F5F7;
+    padding-bottom: 153px;
+}
+
+.companies__heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.companies__grid {
+    display: grid;
+    position: relative;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    grid-gap: 40px 102px;
+}
+
+.companies__link {
+    filter: grayscale(100);
+    opacity: 0.4;
+    transition: 1.5s;
+}
+
+.companies__link:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.companies__grid::before {
+    content: "";
+    position: absolute;
+    background: url("../assets/img/6studentswork/shapes.svg") 0% 0% / contain no-repeat;
+    width: 68px;
+    height: 75px;
+    left: -180px;
+    bottom: calc(-50%);
+}
+
+/*===================================================== Program =====================================================*/
+/*===================================================== Program =====================================================*/
+.program__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 115px 0px 185px;
+}
+
+.program__heading {
+    margin-bottom: 36px;
+    font-size: 0px;
+}
+
+.program__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    display: inline-block;
+    margin-top: 24px;
+    position: relative;
+}
+
+.program__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-top: 16px;
+    display: none;
+}
+
+.program__accTitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FF3F3A;
+}
+
+.program__link {
+    display: block;
+    padding-left: 40px;
+}
+
+.program__header::before,
+.program__header::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: #FF3F3A;
+    top: 50%;
+    left: -40px;
+}
+
+.program__header::after {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.program__acc {
+    width: 600px;
+}
+
+.program__link--active .program__header::after {
+    transform: rotate(0deg);
 }
