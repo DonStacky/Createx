@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .wrapper {
     min-height: 100%;
     height: auto;
@@ -950,4 +954,220 @@ li.slick-active>button {
 
 .program__link--active .program__header::after {
     transform: rotate(0deg);
+}
+
+/*===================================================== Blog =====================================================*/
+/*===================================================== Blog =====================================================*/
+.blog__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 60px;
+}
+
+.blog__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 213px;
+}
+
+.blog__imgbox img {
+    width: auto;
+}
+
+.blog__imgbox {
+    height: 300px;
+    padding: 12px;
+}
+
+.blog__imgbox--left {
+    background: url('../assets/img/8blog/image(3).jpg') 50% 50% / cover no-repeat;
+}
+
+.blog__imgbox--center {
+    background: url('../assets/img/8blog/image.jpg') 50% 50% / cover no-repeat;
+}
+
+.blog__imgbox--right {
+    background: url('../assets/img/8blog/image(2).jpg') 50% 50% / cover no-repeat;
+}
+
+.blog__icon {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0px 8px;
+    line-height: 23px;
+    border-radius: 4px;
+}
+
+.blog__icon img {
+    margin-right: 4px;
+}
+
+.blog__desc {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+    padding: 16px 0px 8px;
+}
+
+.blog__desc span {
+    position: relative;
+    margin-right: 24px;
+}
+
+.blog__desc span::after {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    background-color: #787A80;
+    top: calc(50% - 6px);
+    right: -12px;
+}
+
+.blog__span--right::after {
+    display: none;
+}
+
+.blog__desc img {
+    margin-right: 9px;
+}
+
+.blog__itemTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.blog__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 16px;
+}
+
+.blog__item>span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E212C;
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+.blog__item {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.blog__item:hover>span {
+    color: #F75E05;
+}
+
+.blog__item:hover {
+    transform: scale(1.05);
+}
+
+/*===================================================== Contact =====================================================*/
+/*===================================================== Contact =====================================================*/
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 180px;
+    gap: 15px;
+}
+
+.contact__map {
+    height: 412px;
+    max-width: 705px;
+    width: 100%;
+    object-fit: cover;
+}
+.contacts__list {
+    padding: 40px 0px 48px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.contacts__item h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #787A80;
+}
+.contacts__item {
+    position: relative;
+    padding-left: 36px;
+}
+.contacts__item:not(:last-of-type) {
+    margin-bottom: 24px;
+}
+.contacts__item::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0px;
+    left: 0px;
+}
+
+.contacts__item--mail::after {
+    background: url("../assets/img/9contacts/Chat.svg") 0% 0% / 100% no-repeat;
+}
+
+.contacts__item--tel::after {
+    background: url("../assets/img/9contacts/iPhone.svg") 0% 0% / 100% no-repeat;
+}
+
+.contacts__item--pin::after {
+    background: url("../assets/img/9contacts/outline.svg") 0% 0% / 100% no-repeat;
+}
+
+.contact__follow {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+
+.contact__socials {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.contact__icon {
+    cursor: pointer;
+}
+
+.contacts__item a {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact__icon:hover path {
+    fill: #FF3F3A;
+    transition: 0.5s;
+}
+.contacts__item>a:hover {
+    color: #FF3F3A;
 }
