@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     min-height: 100%;
     height: auto;
@@ -1094,7 +1098,11 @@ li.slick-active>button {
     max-width: 705px;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    overflow: hidden;
 }
+
 .contacts__list {
     padding: 40px 0px 48px;
     font-weight: 400;
@@ -1111,13 +1119,16 @@ li.slick-active>button {
     align-items: center;
     color: #787A80;
 }
+
 .contacts__item {
     position: relative;
     padding-left: 36px;
 }
+
 .contacts__item:not(:last-of-type) {
     margin-bottom: 24px;
 }
+
 .contacts__item::after {
     content: "";
     position: absolute;
@@ -1168,6 +1179,308 @@ li.slick-active>button {
     fill: #FF3F3A;
     transition: 0.5s;
 }
+
 .contacts__item>a:hover {
     color: #FF3F3A;
+}
+
+/*===================================================== Form =====================================================*/
+/*===================================================== Form =====================================================*/
+.form {
+    padding-bottom: 180px;
+}
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__imgbox {
+    max-width: 435px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.form__questions {
+    max-width: 705px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.form__heading {
+    margin-bottom: 40px;
+}
+
+.form__form {
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+    margin-bottom: 24px;
+}
+
+.form__label {
+    flex: 1 1 auto;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 8px;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.form__input,
+.form__textarea {
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    padding: 13px 0px 13px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.form__textarea {
+    height: 128px;
+    width: 100%;
+    margin-bottom: 48px;
+    resize: none;
+}
+
+.form__textarea::placeholder,
+.form__input::placeholder {
+    color: #9A9CA5;
+}
+
+.form__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__text span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    padding-left: 12px;
+    color: #424551;
+}
+
+.form__btn {
+    height: 52px;
+    width: 100%;
+    max-width: 340px;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.form__text>div {
+    display: flex;
+}
+
+.form__checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    margin-right: 12px;
+}
+
+.form__checkbox--default {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.form__checkbox--custom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid #424551;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__checkboxLabel {
+    display: flex;
+}
+
+.form__checkbox--default:checked+.form__checkbox--custom {
+    background: url("../assets/img/10questions/checkbox/check.svg") 50% 50% / 10px 8px no-repeat, #FF3F3A;
+    border: none;
+}
+
+/*===================================================== Footer =====================================================*/
+/*===================================================== Footer =====================================================*/
+.footer {
+    background-color: #1E212C;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 80px 0px 60px;
+}
+
+.footer__logo {
+    max-width: 280px;
+}
+
+.footer__desc {
+    margin: 24px 0px 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.footer__socials {
+    gap: 20px;
+}
+.footer__icon:hover path {
+    fill: white;
+}
+.footer__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.footer__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.footer__item:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.footer__signUp {
+    position: relative;
+    max-width: 286px;
+}
+
+.footer__label {
+    height: auto;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.footer__title:last-of-type {
+    margin-bottom: 24px;
+}
+.footer__email {
+    height: 36px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 9px 40px 9px 12px;
+    color: #fff;
+}
+
+.footer__email::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer__item--contact {
+    position: relative;
+    padding-left: 24px;
+}
+
+.footer__item--contact::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 0;
+}
+
+.footer__item--mail::after {
+    background: url("../assets/img/11footer/Mail.svg") 50% 50% / 100% no-repeat;
+}
+
+.footer__item--tel::after {
+    background: url("../assets/img/11footer/iPhone.svg") 50% 50% / 100% no-repeat;
+}
+
+.footer__label>button {
+    position: absolute;
+    background-color: transparent;
+    top: 58px;
+    right: 14px;
+}
+
+.footer__label>button:hover path {
+    fill: white;
+}
+
+.footer__subfooter {
+    background-color: rgba(217, 217, 217, 0.05);
+}
+
+.subfooter__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.footer__copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.footer__copy>svg {
+    margin: 0px 4px;
+}
+
+.footer__gotop {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.footer__gotop:hover {
+    opacity: 1;
+}
+.footer__item:hover {
+    opacity: 1;
 }
