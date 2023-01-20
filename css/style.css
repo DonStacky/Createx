@@ -295,7 +295,7 @@ body {
     line-height: 160%;
     color: #424551;
     margin-bottom: 60px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .about__createx-text-bold {
@@ -304,7 +304,7 @@ body {
     line-height: 150%;
     margin-top: 48px;
     margin-bottom: 24px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .about__createx-img {
@@ -341,7 +341,7 @@ body {
     font-weight: 900;
     margin-right: 16px;
     margin-left: 30px;
-    line-height: 60px;
+    line-height: 130%;
     color: #FF3F3A;
 }
 
